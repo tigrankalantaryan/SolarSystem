@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29503.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarSystem.UI", "SolarSystem.UI\SolarSystem.UI.csproj", "{437F9F15-C848-413A-95FF-6FA6CBC479D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarSystem.Core", "SolarSystem.Core\SolarSystem.Core.csproj", "{14293275-5F29-4F1D-9696-DD9CD367999E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarSystem.Dal.Abstraction", "SolarSystem.Dal.Abstraction\SolarSystem.Dal.Abstraction.csproj", "{29A8D87E-5425-4DFD-A3EB-26DA53FB3195}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarSystem.Dal.Sqlite", "SolarSystem.Dal.Sqlite\SolarSystem.Dal.Sqlite.csproj", "{31CAE411-47E6-480E-A07D-47A412B57069}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarSystem.MockData.Generator", "SolarSystem.MockData.Generator\SolarSystem.MockData.Generator.csproj", "{9DC12B8A-1FE7-49E0-94F5-25C370BB484B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{437F9F15-C848-413A-95FF-6FA6CBC479D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{437F9F15-C848-413A-95FF-6FA6CBC479D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{437F9F15-C848-413A-95FF-6FA6CBC479D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{437F9F15-C848-413A-95FF-6FA6CBC479D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14293275-5F29-4F1D-9696-DD9CD367999E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14293275-5F29-4F1D-9696-DD9CD367999E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14293275-5F29-4F1D-9696-DD9CD367999E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14293275-5F29-4F1D-9696-DD9CD367999E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29A8D87E-5425-4DFD-A3EB-26DA53FB3195}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29A8D87E-5425-4DFD-A3EB-26DA53FB3195}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29A8D87E-5425-4DFD-A3EB-26DA53FB3195}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29A8D87E-5425-4DFD-A3EB-26DA53FB3195}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31CAE411-47E6-480E-A07D-47A412B57069}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31CAE411-47E6-480E-A07D-47A412B57069}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31CAE411-47E6-480E-A07D-47A412B57069}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31CAE411-47E6-480E-A07D-47A412B57069}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DC12B8A-1FE7-49E0-94F5-25C370BB484B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DC12B8A-1FE7-49E0-94F5-25C370BB484B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DC12B8A-1FE7-49E0-94F5-25C370BB484B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DC12B8A-1FE7-49E0-94F5-25C370BB484B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6224B6A3-AD15-436C-B135-0A0E93B8515E}
+	EndGlobalSection
+EndGlobal

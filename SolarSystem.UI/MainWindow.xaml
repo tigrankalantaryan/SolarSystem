@@ -1,0 +1,42 @@
+﻿<Window x:Class="SolarSystem.UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SolarSystem.UI"
+        xmlns:models="clr-namespace:SolarSystem.Dal.Abstraction.Models;assembly=SolarSystem.Dal.Abstraction"
+        xmlns:viewModels="clr-namespace:SolarSystem.Core.ViewModels;assembly=SolarSystem.Core"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+
+        <DataGrid Grid.Column="0" ItemsSource="{Binding Planets}" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Binding="{Binding Id}"/>
+                <DataGridTextColumn Header="Name" Binding="{Binding Name}"/>
+                <DataGridTemplateColumn Header="Action">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="View Properties" Command="{Binding Path=ViewProperties}"></Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Header="Delete">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Delete Planet" Command="{Binding Path=DeletePlanet}"></Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Add Planet" Command="{Binding Path=AddPlanet}" Grid.Column="0" Height="25" Width="70" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="20" Click="AddPlanetClick" />
+        <ListBox Grid.Column="1" x:Name="propertiesListBox" ItemsSource="{Binding PlanetProperties}"/>
+    </Grid>
+</Window>
